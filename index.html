@@ -3,6 +3,9 @@
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
  <title>Animal ID</title>
  <link rel="stylesheet" href="./styles.css">
  <link rel="stylesheet" href="./reset.css">
@@ -11,182 +14,21 @@
 
 <body ng-controller="mainControl">
 
-<main>
-
-<!--HOME-TOP SECTION-->
-      <section class= "home-back1">
-      <h1 class="title">Animal ID</h1>
-      <h1 class="index">Archive<h1 class="inline">___________</h1></h1>
-      <h1 class="pages">Pages<h1 class="paline">___________</h1></h1>
-      <h1 class="contact">Guiness<h1 class="coline">___________</h1></h1>
-      <h1 class="about">About<h1 class="abline">___________</h1></h1>
-      </section>
-
-      <div class="scroll-tab"><h1 class="scroll-down">scroll down</h1></div>
-      <!--<h1 class="quick-start">identify</h1>-->
-
-<!--HOME-AMPHIBIANS SECTION-->
-      <div class="banner1">
-      <div class="bannerfrog"></div>
-      <div class="curtainfrog"></div>
-      </div>
-
-      <section class= "home-back2">
-        
-      <h1 class="classes">Amphibians</h1>
-      <h1 class="identify">Identify<h1 class="idline">___________</h1></h1>
-      <h1 class="archive">Archive<h1 class="arline">___________</h1></h1>
-      <h1 class="camo">Camouflage<h1 class="caline">___________</h1></h1>
-      <h1 class="explore">Explore<h1 class="exline">___________</h1></h1>
-      </section>
-
-<!--HOME-ARTHROPODS SECTION-->
-      <div class="banner2">
-      <div class="bannerbug"></div>
-      <div class="curtainbug"></div>
-      </div>
-
-      <section class= "home-back3">
-          <h1 class="classes">Arthropods</h1>
-          <h1 class="identify">Identify<h1 class="idline">___________</h1></h1>
-          <h1 class="archive">Archive<h1 class="arline">___________</h1></h1>
-          <h1 class="camo">Camouflage<h1 class="caline">___________</h1></h1>
-          <h1 class="explore">Explore<h1 class="exline">___________</h1></h1>
-          <div class="lady-bug"></div>
-          <div class="lady-bug"></div>
-          <div class="lady-mug"></div>
-          <div class="lady-shade"></div>
-          <div class="lady-shade"></div>
-          <div class="lady-shade"></div>
-          <div class="lady-shade"></div>
-          <div class="lady-shade"></div>
-          <div class="lady-shade"></div>
-          <div class="lady-shade"></div>
-          <div class="lady-shade"></div>
-          <div class="lady-shade"></div>
-          <div class="lady-shade"></div>
-          <div class="lady-shades"></div>
-          <div class="lady-shades"></div>
-          <div class="lady-shades"></div>
-          <div class="yellow-bug"></div>
-      </section>
-
-<!--HOME-BIRD SECTION-->
-
-      <div class="banner3">
-      <div class="bannerbird"></div>
-      <div class="curtainbird"></div>
-      </div>
-
-      <section class= "home-back4">
-        
-      <h1 class="classes">Birds</h1>
-      <h1 class="identify">Identify<h1 class="idline">___________</h1></h1>
-      <h1 class="archive">Archive<h1 class="arline">___________</h1></h1>
-      <h1 class="camo">Camouflage<h1 class="caline">___________</h1></h1>
-      <h1 class="explore">Explore<h1 class="exline">___________</h1></h1>
-      <canvas id="canvas"></canvas>
-      </section>
-
-<!--HOME-FISH SECTION-->
-
-      <div class="banner4">
-      <div class="bannerfish"></div>
-      <div class="curtainfish"></div>
-      </div>
-
-      <section class= "home-back5">
-      <div class="fish-curtain"></div>
-      <h1 class="classes">Fish</h1>
-      <h1 class="identify">Identify<h1 class="idline">___________</h1></h1>
-      <h1 class="archive">Archive<h1 class="arline">___________</h1></h1>
-      <h1 class="camo">Camouflage<h1 class="caline">___________</h1></h1>
-      <h1 class="explore">Explore<h1 class="exline">___________</h1></h1>
-      
-            <div class="fish">
-            <div class="fish-body"></div>
-            <div class="finLeft">
-              <div class="finLeft1"></div>
-              <div class="finLeft2"></div>
-              <div class="finLeft3"></div>
-              <div class="finLeft4"></div>
-            </div>
-            <div class="finRight">
-              <div class="finRight1"></div>
-              <div class="finRight2"></div>
-              <div class="finRight3"></div>
-              <div class="finRight4"></div>
-            </div>
-            <div class="tail">
-              <div class="tailMiddle"></div>
-              <div class="tailLeft"></div>
-              <div class="tailRight"></div>
-              <div class="tail1"></div>
-              <div class="tail2"></div>
-              <div class="tailFin">
-                <div class="tailFinMiddle"></div>
-                <div class="tailFin1"></div>
-                <div class="tailFin2"></div>
-                <div class="tailFin3"></div>
-                <div class="tailFin4"></div>   
-                <div class="tailFin5"></div>
-                <div class="tailFin6"></div>    
-              </div>
-              </div>
-              </div>
-
-      <!--<canvas class="fish-stage" id="f"></canvas>
-      <script>
-        var b = document.body;
-        var c = document.getElementsByTagName('canvas')[0];
-        var a = f.getContext('2d');
-        document.body.clientWidth; // fix bug in webkit: http://qfox.nl/weblog/218
-      </script>-->
-
-      </section>
-
-<!--HOME-MAMMALS SECTION-->
-      <div class="banner5">
-      <div class="bannermam"></div>
-      <div class="curtainmam"></div>
-      </div>
-
-      <section class= "home-back6">
-      <h1 class="classes">Mammals</h1>
-      <h1 class="identify">Identify<h1 class="idline">___________</h1></h1>
-      <h1 class="archive">Archive<h1 class="arline">___________</h1></h1>
-      <h1 class="camo">Camouflage<h1 class="caline">___________</h1></h1>
-      <h1 class="explore">Explore<h1 class="exline">___________</h1></h1>
-      </section>
-
-<!--HOME-REPTILE SECTION-->
-      <div class="banner6">
-      <div class="bannerrep"></div>
-      <div class="curtainrep"></div>
-      </div>
-
-      <section class= "home-back7">
-     <h1 class="classes">reptiles</h1>
-     <h1 class="identify">Identify<h1 class="idline">___________</h1></h1>
-     <h1 class="archive">Archive<h1 class="arline">___________</h1></h1>
-     <h1 class="camo">Camouflage<h1 class="caline">___________</h1></h1>
-     <h1 class="explore">Explore<h1 class="exline">___________</h1></h1>
-     <canvas id="c"></canvas>
-     </section>
-
-<div class="footer"></div>
+<ui-view></ui-view>
 
 <!--SCRIPT TAGS-->
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0/angular-ui-router.js"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.js"integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+      <script src="http://roshinjose.com/codepen/plugins.js"></script>
       <script src="./angular.js"></script>
       <script src="./controller/main-control.js"></script>
-      <script src="./controller/style-control.js"></script>
+      <script src="./controller/home-control.js"></script>
+      <script src="./controller/frog-control.js"></script>
+      <script src="./controller/bugs-control.js"></script>
+      <!--<script src="./controller/style-control.js"></script>-->
       <!--<script src="./controller/fish-control.js"></script>-->
-      <script src="./controller/particle-control.js"></script>
-
-      </main>
       </body>
       </html>
 

@@ -10,103 +10,106 @@
     width:100%;
     position: fixed;  
     }
-            .title {
-            color: white;
-            text-shadow: 0px 0px 20px black;
-            font-family: 'againts';
-            font-size: 240px;
-            position: absolute;
-            top:10%;
-            left:50%;
-            transform: translate(-50%);
-            }
-
-            .index {
-            color: orange;
-            font-family: 'code bold';
-            text-shadow: 0px 0px 10px black;
-            font-size: 20px;
-            position: absolute;
-            top:37%;
-            left:35%;
-            transform: translate(-50%);
-            }
-
-            .pages {
-            color: orange;
-            font-family: 'code bold';
-            text-shadow: 0px 0px 10px black;
-            font-size: 20px;
-            position: absolute;
-            top:37%;
-            left:45%;
-            transform: translate(-50%);
-            }
-            .contact {
-            color: orange;
-            font-family: 'code bold';
-            text-shadow: 0px 0px 10px black;
-            font-size: 20px;
-            position: absolute;
-            top:37%;
-            left:55%;
-            transform: translate(-50%);
-            }
-            .about {
-            color: orange;
-            font-family: 'code bold';
-            text-shadow: 0px 0px 10px black;
-            font-size: 20px;
-            position: absolute;
-            top:37%;
-            left:65%;
-            transform: translate(-50%);
-            }
-            .inline {
-            color: orange;
-            font-family: 'code bold';
-            text-shadow: 0px 0px 10px black;
-            font-size: 25px;
-            position: absolute;
-            top:37%;
-            left:35%;
-            transform: translate(-50%);
-            z-index: -1;
-            }
-            .paline {
-            color: orange;
-            font-family: 'code bold';
-            text-shadow: 0px 0px 10px black;
-            font-size: 25px;
-            position: absolute;
-            top:37%;
-            left:45%;
-            transform: translate(-50%);
-            z-index: -1;
-            }
-            .coline {
-            color: orange;
-            font-family: 'code bold';
-            text-shadow: 0px 0px 10px black;
-            font-size: 25px;
-            position: absolute;
-            top:37%;
-            left:55%;
-            transform: translate(-50%);
-            z-index: -1;
-            }
-            .abline {
-            color: orange;
-            font-family: 'code bold';
-            text-shadow: 0px 0px 10px black;
-            font-size: 25px;
-            position: absolute;
-            top:37%;
-            left:65%;
-            transform: translate(-50%);
-            z-index: -1;
-            }
-/*HOME-PAGE TABS*/
+    .title {
+    color: white;
+    text-shadow: 0px 0px 20px black;
+    font-family: 'againts';
+    font-size: 240px;
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%);
+    }
+/*HOME-PAGE TOP TABS*/
+    .index {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    position: absolute;
+    top:37%;
+    left:35%;
+    transform: translate(-50%);
+    cursor: pointer;
+    }
+    .pages {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    position: absolute;
+    top:37%;
+    left:45%;
+    transform: translate(-50%);
+    cursor: pointer;
+    }
+    .contact {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    position: absolute;
+    top:37%;
+    left:55%;
+    transform: translate(-50%);
+    cursor: pointer;
+    }
+    .about {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    position: absolute;
+    top:37%;
+    left:65%;
+    transform: translate(-50%);
+    cursor: pointer;
+    }
+    .inline {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:37%;
+    left:35%;
+    transform: translate(-50%);
+    z-index: -1;
+    }
+    .paline {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:37%;
+    left:45%;
+    transform: translate(-50%);
+    z-index: -1;
+    }
+    .coline {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:37%;
+    left:55%;
+    transform: translate(-50%);
+    z-index: -1;
+    }
+    .abline {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:37%;
+    left:65%;
+    transform: translate(-50%);
+    z-index: -1;
+    }
+/*HOME-PAGE SLIP*/
         .scroll-tab {
         text-align: center;
         background-image: url("Images/Home/Scroll-Tab.jpeg");
@@ -331,9 +334,9 @@
             }
             .footer {
             background-color: black;
-            height:70px;
+            height:10px;
             width:100%;
-            top: 6220px; 
+            top: 6230px; 
             position: absolute;
             }
 
@@ -358,6 +361,7 @@
     top:30%;
     left:35%;
     transform: translate(-50%);
+    cursor: pointer;
     }
 
     .archive {
@@ -369,8 +373,9 @@
     top:30%;
     left:45%;
     transform: translate(-50%);
+    cursor: pointer;
     }
-    .camo {
+    .trivia {
     color: orange;
     font-family: 'code bold';
     text-shadow: 0px 0px 10px black;
@@ -379,6 +384,7 @@
     top:30%;
     left:55%;
     transform: translate(-50%);
+    cursor: pointer;
     }
     .explore {
     color: orange;
@@ -389,6 +395,7 @@
     top:30%;
     left:65%;
     transform: translate(-50%);
+    cursor: pointer;
     }
     .idline {
     color: orange;
@@ -834,7 +841,7 @@
         /* Simple Swim Animation */
         @keyframes swim {
         100% {
-            transform: translateY(-150px) translateX(2500px) rotate(20deg);
+            transform: translateY(-150px) translateX(2100px) rotate(20deg);
         }
         }
         /* Left Fin Animation */
@@ -943,3 +950,397 @@
             transform: translateY(0px) translateX(0px) rotate(0deg);
         }
         }
+/*EXPLORER HEADER*/
+    .explore-header {
+    height: 40px;
+    width: 100%;
+    box-shadow: inset 0 0 50px black;
+    }
+    .header-title {
+    font-family: 'againts';
+    text-shadow: 0 0 10px black;
+    font-size: 35px;
+    color: orange;
+    top: 3px;
+    left: 6%;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 10;
+    transition: text-shadow .2s ease-in-out, color .2s ease-in-out;
+    }
+    .header-home {
+    cursor: pointer;
+    font-family: 'code bold';
+    font-size: 20px;
+    text-shadow: 0 0 10px white;
+    color: white;
+    top: 12px;
+    left: 35%;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 10;
+    transition: text-shadow .2s ease-in-out, color .2s ease-in-out;
+    }
+    .header-home:hover {
+    text-shadow: 0 0 20px black;
+    color: black;
+    }
+    .header-iden {
+    cursor: pointer;
+    font-family: 'code bold';
+    text-shadow: 0 0 20px white;
+    font-size: 20px;
+    color: white;
+    top: 12px;
+    left: 45%;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 10;
+    transition: text-shadow .2s ease-in-out, color .2s ease-in-out;
+    }
+    .header-iden:hover {
+    text-shadow: 0 0 20px black;
+    color: black;
+    }
+    .header-arch {
+    cursor: pointer;
+    font-family: 'code bold';
+    text-shadow: 0 0 20px white;
+    font-size: 20px;
+    color: white;
+    top: 12px;
+    left: 55%;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 10;
+    transition: text-shadow .2s ease-in-out, color .2s ease-in-out;
+    }
+    .header-arch:hover {
+    text-shadow: 0 0 20px black;
+    color: black;
+    }
+    .header-triv {
+    cursor: pointer;
+    font-family: 'code bold';
+    text-shadow: 0 0 20px white;
+    font-size: 20px;
+    color: white;
+    top: 12px;
+    left: 65%;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 10;
+    transition: text-shadow .2s ease-in-out, color .2s ease-in-out;
+    }
+    .header-triv:hover {
+    text-shadow: 0 0 20px black;
+    color: black;
+    }
+/*ARTHROPODS-EXPLORE*/
+    .bugs-back {
+    background-image: url("images/arthropods/Arthropods-two.png");
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+    .bugs-curtain {
+    background: -webkit-linear-gradient(right, transparent, transparent, black);
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+
+/*ARTHROPODS-EXPLORE TABS*/
+    .chelicerates {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    }
+    .chelicerates:hover{
+    text-shadow: 0px 0px 10px white;
+    }  
+    .crustaceans {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    }
+    .crustaceans:hover{
+    text-shadow: 0px 0px 10px white;
+    }  
+    .hexapods {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    }
+    .hexapods:hover{
+    text-shadow: 0px 0px 10px white;
+    }  
+    .myriapods{
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    }
+    .myriapods:hover{
+    text-shadow: 0px 0px 10px white;
+    } 
+    .bech-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%);
+    z-index: -1;
+    }
+    .becr-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%);
+    z-index: -1;
+    }
+    .behe-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%);
+    z-index: -1;
+    }
+    .bemy-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%);
+    z-index: -1;
+    }
+/*ARTHROPODS-EXPLORE PARTICLES*/
+    #particles-js {
+    position: fixed;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    opacity: .5;
+    }
+/*ARTHROPODS-EXPLORE CURTAINS*/
+    .cheli {
+    background-image: url("images/arthropods/scorpion-curtain.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:15%;
+    left:80%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    /*-webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+    }
+    .crust {
+    background-image: url("images/arthropods/crab-curtain.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:35%;
+    left:80%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    }
+    .hexap {
+    background-image: url("images/arthropods/bee-curtain.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:55%;
+    left:80%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    }
+    .myria {
+    background-image: url("images/arthropods/centipede-curtain.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:75%;
+    left:80%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    }
+/*AMPHIBIANS-EXPLORE*/
+    .frog-back {
+    background-image: url("images/amphibians/amphibians.jpeg");
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+    .frog-curtain {
+    background: -webkit-linear-gradient(left, transparent, transparent, black);
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+/*AMPHIBIANS-EXPLORE TABS*/
+    .anura {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    }
+    .anura:hover{
+    text-shadow: 0px 0px 10px white;
+    }  
+    .caudata {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    }
+    .caudata:hover{
+    text-shadow: 0px 0px 10px white;
+    }  
+    .gymnophiona {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    }
+    .gymnophiona:hover{
+    text-shadow: 0px 0px 10px white;
+    }  
+    .aean-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%);
+    z-index: -1;
+    }
+    .aeca-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%);
+    z-index: -1;
+    }
+    .aegy-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%);
+    z-index: -1;
+    }
+/*AMPHIBIANS-EXPLORE CURTAINS*/
+    .anuro {
+    background-image: url("images/arthropods/scorpion-curtain.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:25%;
+    left:80%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    /*-webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+    }
+    .cauda {
+    background-image: url("images/arthropods/crab-curtain.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:45%;
+    left:80%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    }
+    .gymno {
+    background-image: url("images/amphibians/gymnophiona-curtain.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:65%;
+    left:80%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    }

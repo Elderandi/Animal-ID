@@ -4,7 +4,7 @@ angular.module('animalid')
 
 
 
-$scope.test = "working";
+
 
 
   });
