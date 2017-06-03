@@ -92,7 +92,7 @@ var ladyBug = $('.lady-shades')
         $(function () {
         var W, H,
         canvas, ctx, //ctx stands for context and is the "curso" of our canvas element.
-        particleCount = 200,
+        particleCount = 0,
         particles = []; //this is an array which will hold our particles Object/Class
 
         W = window.innerWidth ;
@@ -110,8 +110,7 @@ var ladyBug = $('.lady-shades')
         y: 0,
         rx:0,
         ry:0,
-        speed:45,
-        delta:0
+      
         };
     
         // document.addEventListener('mousemove', function(e){ 

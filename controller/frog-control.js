@@ -218,6 +218,5 @@ for( var i = 0; i < chainCount; i++ ) {
 }
 
 loop();
-reset();
 
 });
