@@ -2,7 +2,7 @@
   "name": "database",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "back-end/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,9 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "massive": "^3.0.0-rc1"
+    "express-session": "^1.15.3",
+    "massive": "~2.6.1",
+    "passport": "^0.3.2",
+    "passport-auth0": "^0.6.0"
   }
 }
