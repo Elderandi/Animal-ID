@@ -1,0 +1,63 @@
+<div class="reptile-back"><iframe width="1920" height="1200vh" ng-src="https://media.flixel.com/cinemagraph/4gfx3dbrcsr88snnbfaa?hd=true" frameborder="0" allowfullscreen></iframe></div>
+<div class="block-iframe"></div>
+<div class="explore-header">
+<h1 class="header-title"><span class="reptile-text">n </span>R e p t i l e s</h1>
+            <span class="home-header-styles" ui-sref="home">H O M E</span>
+            <span class="home-header-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="home-header-styles" ui-sref="identify.orders">I D E N T I F Y</span>
+            <span class="home-header-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="home-header-styles" ui-sref="shop">S H O P</span></h1>
+            <span class="home-header-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="home-header-styles" ui-sref="camouflage.difficulties">C A M O U F L A G E</span>
+            <span class="home-header-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="home-header-styles" ui-sref="guiness">G U I N E S S</span>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="side-thingy">
+    <div ng-repeat="sub in subclasses | orderBy: 'mainclass_name'" ng-show="showClasses">
+
+        <a ng-click="animals(sub.mainclass_id)" class="api-pointer"><span class="api-animal">• {{sub.mainclass_name}}</span></a>
+        <image class="api-image" src={{sub.mainclass_image}}></image></span><br>
+        <br><span ng-show="sub.mainclass_definition" class="api-text"><span class="sci-name">Class Definition: </span>{{sub.mainclass_definition}}</span><br>
+        <br><span ng-show="sub.order_list" class="api-text"><span class="sci-name">Orders and Subclasses: </span>{{sub.order_list}}<hr></span></div><br>
+
+    <div ng-click="animalData(animal.animal_id)" class="api-pointer" ng-repeat="animal in animalList | orderBy: 'animal_name'" ng-show="showAnimalList">• {{animal.animal_name}}</div>
+
+    <div ng-show="showAnimal"><span class="api-animal"><hr>{{animalData.animal_name}}</span>
+    <hr><span class="sci-name">{{animalData.sci_name}}<br>
+    
+    <br><image class="api-image" src={{animalData.image1}}></image></span><br>
+    <br><span class="api-text">{{animalData.intro}}<br>
+    
+    <span ng-show="animalData.description"><span class="sci-name"><br>Description</span><br>{{animalData.description}}</span><br>
+    
+    <span ng-show="animalData.behaviour"><span class="sci-name"><br>Behaviour</span><br>{{animalData.behaviour}}<br></span>
+    
+    <br><image class="api-image" src={{animalData.image2}}></image></span><br>
+
+    <span class="api-text" ng-show="animalData.def_mech"><span class="sci-name"><br>Defense Mechanism</span><br>{{animalData.def_mech}}<br></span>
+
+    <span class="api-text" ng-show="animalData.diet"><span class="sci-name"><br>Diet</span><br>{{animalData.diet}}<hr></span></div>
+</div>
+
+
+
+
+<a ng-click="classes('16')"><h1 class="crocoa">C R O C O D I L I A<h1 class="croco-line">___________</h1><div class="croco"></div></a></h1>
+<a ng-click="classes('17')"><h1 class="diapsa">L E P I D O S A U R I A<h1 class="diaps-line">___________</h1><div class="diaps"></div></a></h1>
+<a ng-click="classes('18')"><h1 class="anapsa">T E S T U D I N E S<h1 class="anaps-line">___________</h1><div class="anaps"></div></a></h1>
+
+<div class="banner-shadow"></div>
+
+<div class="back-drop"></div>
+
+
+

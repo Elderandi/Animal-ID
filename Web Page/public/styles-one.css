@@ -1,0 +1,2371 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700');
+
+@font-face {
+    font-family: 'againts';
+    src: url('fonts/againts.otf');
+}
+@font-face {
+    font-family: 'code bold';
+    src: url('fonts/CODE Bold.otf');
+}
+@font-face {
+    font-family: 'code light';
+    src: url('fonts/CODE Light.otf');
+}
+@font-face {
+    font-family: 'amphibiprint';
+    src: url('fonts/AMPHP___.ttf');
+}
+@font-face {
+    font-family: 'butterflies';
+    src: url('fonts/Butterflies.ttf');
+}
+@font-face {
+    font-family: 'birds tfb';
+    src: url('fonts/Birds TFB.ttf');
+}
+@font-face {
+    font-family: 'le fish';
+    src: url('fonts/LE FISH.ttf');
+}
+@font-face {
+    font-family: 'deers';
+    src: url('fonts/Deers.ttf');
+}
+@font-face {
+    font-family: 'snake mix';
+    src: url('fonts/Snake Mix.ttf');
+}
+@font-face {
+    font-family: 'kg arrows';
+    src: url('fonts/KGArrows.ttf');
+}
+
+/*ANIMAL-ID BODY*/
+    body {
+    background-color: black;
+    overflow-x: hidden;
+    }
+   
+/*HOME-PAGE TOP*/
+    .home-back1 {
+    background-image: url("images/home/slide/tiger.jpeg");
+    background-size: cover;
+    height:100vh;
+    width:100vw;
+    position: fixed;  
+    }
+    .title {
+    color: white;
+    text-shadow: 0px 0px 20px black;
+    font-family: 'againts';
+    font-size: 16vw;
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%);
+    }
+    .home-curtain {
+    background: -webkit-linear-gradient(top, transparent, transparent, transparent, black);
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+    .invertebrates {
+    cursor: pointer;
+    background: -webkit-linear-gradient(top, #FF8C00, orangered);
+    position: absolute;
+    width: 350px;
+    height: 70px;
+    top: 60px;
+    right: -80px;
+    box-shadow: 0 0 5em black;
+    transform: rotate(45deg);
+    z-index: 100;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .invertebrates:hover {
+    box-shadow: 0 0 5em orangered;
+    }
+    .invertebrates-text {
+    font-family: 'code bold';
+    position: absolute;
+    letter-spacing: 2px;
+    font-size: 25px;
+    top: 10px;
+    left: 55%;
+    transform: translate(-50%);
+    }
+    .lady-bugy {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url("images/Lady-Bug.png");
+    background-repeat: no-repeat;
+    /*background-color: black;*/
+    background-position: center;
+    border-radius: 50%;
+    transform: rotate(230deg);
+    top:-45%;
+    left:55%;
+    z-index: 10;
+    }
+    .animaltree-logo {
+    cursor: pointer;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: gold;
+    box-shadow: inset 0 0 50px orangered, 0 0 10px black;
+    position: absolute;
+    top: -185px;
+    left: 80px;
+    z-index: 100;
+    }
+    .animaltree-innerlogo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: orangered;
+    box-shadow: inset 0 0 20px black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    text-align: center;
+    transition: background-color .3s ease-in-out;
+    }
+    .animaltree-innerlogo:hover {
+    background-color: darkgray;   
+    }
+    .animaltree-tree {
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-left: 3px;
+    margin-top: 10px;
+    background-image: url("images/extras/animaltree-logo.png");
+    z-index: 100;
+    }
+    .at-text {
+    text-shadow: 0px 0px 10px black;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 2.5vh;
+    font-family: 'code bold';
+    z-index: 100;
+    position: absolute;
+    width: 200px;
+    top: 140px;
+    left: -40px;
+    z-index: 150;
+    }
+    .glossary-at {
+    text-shadow: 0px 0px 10px black;
+    width: 80vw;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 10px;
+    font-family: 'code bold';
+    z-index: 100;
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    margin-bottom: 50px;
+    transform: translate(-50%);
+    z-index: 150;
+    text-align: center;
+    }
+    .bigger-text{
+    font-size: 15px;
+    }
+    .orange-text{
+    color: orange;
+    font-size: 15px;
+    }
+    #animaltree {
+    background-size: cover;
+    height:100%;
+    width:100%;
+    max-width: 1500px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform:translate(-45.5%);
+    }
+    .title-at {
+    color: white;
+    text-shadow: 0px 0px 20px black;
+    font-family: 'againts';
+    font-size: 16vw;
+    position: absolute;
+    top:7%;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 5;
+    }
+    .title-atgroup {
+    color: orange;
+    text-shadow: 0px 0px 20px black;
+    font-family: 'code bold';
+    letter-spacing: 40px;
+    font-size: 25px;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%);
+    }
+    .at-bg {
+    background: -webkit-linear-gradient(bottom, black, black, gray);
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: absolute;  
+    }
+/*HOME-PAGE HEADER*/
+    .home-header {
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .home-header-styles {
+    color: white;
+    font-family: 'code bold';
+    font-size: 13px;
+    cursor: pointer;
+    z-index: 50;
+    }
+    .home-header-styles:hover {
+    color: gray;
+    }
+    .home-header-line {
+    color: orange;
+    font-family: 'code bold';
+    font-size: 13px;
+    z-index: 50;
+    }
+/*HOME-PAGE TAB*/
+        .scroll-tab {
+        text-align: center;
+        background-image: url("Images/Home/Scroll-Tab.jpeg");
+        box-shadow: 0px 0px 20px black;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top:725px;
+        left:42.5%;
+        z-index: 10;
+        transform: rotate(5deg);
+        }
+        .scroll-down {
+        font-family: "againts";
+        font-size: 30px;
+        color: black;
+        height: 200px;
+        width: 200px;
+        top: 25px;
+        position: absolute;
+        z-index: 10;
+        }
+/*HOME-PAGE BANNERS*/
+            .banner1 {
+            background-color: white;
+            box-shadow: 0 0 2em black;
+            height:180px;
+            width:105vw;
+            top: 90vh; 
+            left: -50px;
+            z-index: 10;
+            transform: rotate(5deg);
+            position: absolute;
+            }
+            .bannerfrog {
+            background-image: url("Images/Home/Frog-Banner.png");
+            background-size: 95%;
+            top: 5px;
+            height:170px;
+            width:110%;
+            left: -50px;
+            z-index: 10;
+            position: absolute; 
+            }
+            .curtainfrog {
+            background: -webkit-linear-gradient(left, black, transparent, transparent);
+            top: 5px;
+            height:170px;
+            width:50%;
+            z-index: 10;
+            position: absolute;
+            }
+            .banner2 {
+            background-color: white;
+            box-shadow: 0 0 2em black;
+            height:180px;
+            width:105vw;
+            top: 5160px;
+            left: -50px;
+            z-index: 10;
+            transform: rotate(357deg);
+            position: absolute;
+            }
+            .bannerbug {
+            background-image: url("images/home/Bug-Banner.jpeg");
+            background-size: 95%;
+            top: 5px;
+            height:170px;
+            width:110%;
+            left: -50px;
+            z-index: 10;
+            position: absolute; 
+            }
+            .curtainbug {
+            background: -webkit-linear-gradient(left, black, transparent, transparent);
+            top: 5px;
+            height:170px;
+            width:50%;
+            z-index: 10;
+            position: absolute;  
+            }
+            .banner3 {
+            background-color: white;
+            box-shadow: 0 0 2em black;
+            height:180px;
+            width:105vw;
+            top: 290vh; 
+            left: -50px;
+            z-index: 10;
+            transform: rotate(5deg);
+            position: absolute;
+            }
+            .bannerbird {
+            background-image: url("images/home/Fish-Banner.png");
+            background-size: 95%;
+            top: 5px;
+            height:170px;
+            width:110%;
+            left: -50px;
+            z-index: 10;
+            position: absolute; 
+            }
+            .curtainbird {
+            background: -webkit-linear-gradient(left, black, transparent, transparent);
+            top: 5px;
+            height:170px;
+            width:50%;
+            z-index: 10;
+            position: absolute; 
+            }
+            .banner4 {
+            background-color: white;
+            box-shadow: 0 0 2em black;
+            height:180px;
+            width:105vw;
+            top: 390vh; 
+            left: -50px;
+            z-index: 10;
+            transform: rotate(357deg);
+            position: absolute;
+            }
+            .bannerfish {
+            background-image: url("images/home/Mammal-Banner.png");
+            background-size: 95%;
+            top: 5px;
+            height:170px;
+            width:110%;
+            left: -50px;
+            z-index: 10;
+            position: absolute; 
+            }
+            .curtainfish {
+            background: -webkit-linear-gradient(left, black, transparent, transparent);
+            top: 5px;
+            height:170px;
+            width:50%;
+            z-index: 10;
+            position: absolute;
+            }
+            .banner5 {
+            background-color: white;
+            box-shadow: 0 0 2em black;
+            height:180px;
+            width:105vw;
+            top: 490vh; 
+            left: -50px;
+            z-index: 10;
+            transform: rotate(5deg);
+            position: absolute;
+            }
+            .bannermam {
+            background-image: url("Images/Home/Reptile-Banner.png");
+            background-size: 95%;
+            top: 5px;
+            height:170px;
+            width:110%;
+            left: -50px;
+            z-index: 10;
+            position: absolute; 
+            }
+            .curtainmam {
+            background: -webkit-linear-gradient(left, black, transparent, transparent);
+            top: 5px;
+            height:170px;
+            width:50%;
+            z-index: 10;
+            position: absolute;
+            }
+            .banner6 {
+            background-color: white;
+            box-shadow: 0 0 2em black;
+            height:180px;
+            width:105vw;
+            top: 190vh; 
+            left: -50px;
+            z-index: 10;
+            transform: rotate(357deg);
+            position: absolute;
+            }
+            .bannerrep {
+            background-image: url("Images/Home/Bird-Banner.png");
+            background-size: 95%;
+            top: 5px;
+            height:170px;
+            width:110%;
+            left: -50px;
+            z-index: 10;
+            position: absolute; 
+            }
+            .curtainrep {
+            background: -webkit-linear-gradient(left, black, transparent, transparent);
+            top: 5px;
+            height:170px;
+            width:50%;
+            z-index: 10;
+            position: absolute;
+            }
+            .footer {
+            background-color: black;
+            height:15px;
+            width:100%;
+            position: absolute;
+            bottom: 0;
+            }
+
+/*HOME-PAGE CLASSES*/
+            .classes {
+            color: white;
+            text-shadow: 0px 0px 50px black;
+            font-family: 'code bold';
+            font-size: 50px;
+            position: absolute;
+            top:30%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+            }
+            .species-count {
+            color: white;
+            text-shadow: 0px 0px 50px black;
+            font-family: 'code bold';
+            font-size: 17px;
+            position: absolute;
+            top:35%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;   
+            }
+            .species-group {
+            color: white;
+            text-shadow: 0px 0px 50px black;
+            font-family: 'code bold';
+            font-size: 17px;
+            position: absolute;
+            top:38.5%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;   
+            }
+            .italic-text {
+            font-style: italic;   
+            }
+            .species-icon {
+            color: white;
+            text-shadow: 0px 0px 50px black;
+            font-size: 50px;
+            position: absolute;
+            top:75%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;  
+            }
+            .frog-text {
+            font-family: "amphibiprint";
+            }
+            .bugs-text {
+            font-family: "butterflies";
+            }
+            .birds-text {
+            font-family: "birds tfb";
+            }
+            .fish-text {
+            font-family: "le fish";
+            }
+            .mammal-text {
+            font-family: "deers";
+            }
+            .reptile-text {
+            font-family: "snake mix";
+            }
+            .species-start {
+            cursor: pointer;
+            color: white;
+            text-shadow: 0px 0px 50px black;
+            font-family: 'code bold';
+            font-size: 27px;
+            position: absolute;
+            top:75%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            transition: text-shadow .2s ease-in-out;
+            z-index: 5;
+            }
+            .species-start:hover {
+            text-shadow: 0px 0px 5px white   
+            }
+
+  
+
+/*HOME-PAGE BACKGROUNDS*/
+            .home-back2 {
+            background-image: url("images/home/Amphibians-ID.gif");
+            background-size: cover;
+            top: 100vh;
+            height:100vh;
+            width:100%;
+            position: absolute;  
+            }
+            .home-back3 {
+            background-image: url("images/home/Bird-ID.png");
+            background-size: 100%;
+            background-size: cover;
+            top: 200vh;
+            height:100vh;
+            width:100%;
+            position: absolute;  
+            }
+            .home-back4 {
+            background-image: url("images/home/Fishy-ID.gif");
+            background-size: 100%;
+            background-size: cover;
+            top: 300vh;
+            height:100vh;
+            width:100%;
+            position: absolute;  
+            }
+            .home-back5 {
+            background-image: url("images/home/Zion-Waterfall.gif");
+            background-size: 100%;
+            background-size: cover;
+            top: 400vh;
+            height:100vh;
+            width:100%;
+            position: absolute;  
+            }
+            .home-back6 {
+            background-image: url("images/home/Reptile-ID.png");
+            background-size: 100%;
+            background-size: cover;
+            top: 500vh;
+            height:100vh;
+            width:100%;
+            position: absolute;
+            }
+            .home-back7 {
+            background-image: url("Images/Home/Bug-ID.jpeg");
+            background-size: cover;
+            height:100vh;
+            width:100vw;
+            position: absolute; 
+            }
+
+            .home-back2, .home-back3, .home-back4, .home-back5, .home-back6 {
+            background-attachment: fixed;
+            }
+
+/*HOME-PAGE BUGS*/
+    .lady-bug {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url("Images/Lady-Bug.png");
+        background-repeat: no-repeat;
+        /*background-color: black;*/
+        background-position: center;
+        border-radius: 50%;
+        transform: rotate(190deg);
+        top:50%;
+        left:55%;
+        z-index: 10;
+        }
+    .lady-mug {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url("Images/Lady-Mug.png");
+        background-repeat: no-repeat;
+        /*background-color: black;*/
+        background-position: center;
+        border-radius: 50%;
+        transform: rotate(240deg);
+        top:55%;
+        left:50%;
+        z-index: 10;
+        }
+    .yellow-bug {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url("Images/Bug-Two.png");
+        background-repeat: no-repeat;
+        /*background-color: black;*/
+        background-position: center;
+        border-radius: 50%;
+        transform: rotate(30deg);
+        top:30%;
+        left:25%;
+        z-index: 10;
+        }
+    .lady-shade {
+        position: absolute;
+        width: 10px;
+        height: 15px;
+        background-color: black;
+        opacity: .4;
+        box-shadow: inset 0 0 0.5em darkgreen, 0 0 2em black;
+        background-position: center;
+        border-radius: 50%;
+        transform: rotate(140deg);
+        top:60%;
+        left:40%;
+        }
+    .lady-shades {
+        position: absolute;
+        width: 15px;
+        height: 20px;
+        background-color: black;
+        opacity: .4;
+        box-shadow: inset 0 0 0.5em darkgreen, 0 0 2em black;
+        background-position: center;
+        border-radius: 50%;
+        top:70%;
+        left:85%;
+        }
+/*HOME-PAGE FISH*/
+        .fish {
+        margin-top: 700px;
+        margin-left: -450px;
+        width: 150px;
+        height: 100px;
+        transform: rotate(-10deg);
+        animation: swim 50s infinite;
+        /*animation: swim 0s infinite;*/
+        /*animation: swimAll 15s infinite;*/
+        }
+        .fish-body {
+        position: absolute;
+        margin-top: -125px;
+        margin-left: 140px;
+        background-color: black;
+        border-radius: 70%;
+        width: 300px;
+        height: 100px;
+        }
+        .finLeft {
+        transform-origin: bottom right;
+        
+        }
+        .finLeft1 {
+        position: absolute;
+        margin-top: -135px;
+        margin-left: 275px;
+        opacity: .7;
+        background-color: black;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        transform: rotate(45deg);
+        width: 120px;
+        height: 20px;
+        }
+        .finLeft2 {
+        position: absolute;
+        margin-top: -145px;
+        margin-left: 240px;
+        opacity: .7;
+        background-color: black;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        transform: rotate(40deg);
+        width: 120px;
+        height: 20px;
+        }
+        .finLeft3 {
+        position: absolute;
+        margin-top: -135px;
+        margin-left: 230px;
+        opacity: .7;
+        background-color: black;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        transform: rotate(40deg);
+        width: 120px;
+        height: 20px;
+        }
+        .finLeft4 {
+        position: absolute;
+        margin-top: -125px;
+        margin-left: 220px;
+        opacity: .7;
+        background-color: black;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        transform: rotate(40deg);
+        width: 120px;
+        height: 20px;
+        }
+        .finLeft5 {
+        position: absolute;
+        margin-top: -115px;
+        margin-left: 210px;
+        opacity: .7;
+        background-color: black;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        transform: rotate(40deg);
+        width: 120px;
+        height: 20px;
+        }
+        .finLeft6 {
+        position: absolute;
+        margin-top: -105px;
+        margin-left: 200px;
+        opacity: .7;
+        background-color: black;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        transform: rotate(40deg);
+        width: 120px;
+        height: 20px;
+        }
+        .finRight {
+        transform-origin: top right;
+        animation: finRight 4s infinite;
+        }
+        .finRight1 {
+        position: absolute;
+        margin-top: -10px;
+        margin-left: 250px;
+        opacity: 0.7;
+        background-color: black;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        transform: rotate(-40deg);
+        width: 120px;
+        height: 20px;
+        }
+        .finRight2 {
+        position: absolute;
+        margin-top: -40px;
+        margin-left: 245px;
+        opacity: .9;
+        background-color: black;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        transform: rotate(-40deg);
+        width: 120px;
+        height: 50px;
+        }
+        .finRight3 {
+        position: absolute;
+        margin-top: -20px;
+        margin-left: 195px;
+        opacity: 0.5;
+        background-color: black;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        transform: rotate(-30deg);
+        width: 120px;
+        height: 50px;
+        }
+        .finRight4 {
+        position: absolute;
+        opacity: 0.6;
+        margin-top: -15px;
+        margin-left: 215px;
+        background-color: black;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        transform: rotate(-15deg);
+        width: 100px;
+        height: 50px;
+        }
+        .tail {
+        animation: tail 5s infinite;  
+        }
+        .tailMiddle {
+        position: absolute;
+        margin-top: -95px;
+        margin-left: 70px;
+        background-color: black;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        width: 220px;
+        height: 35px;
+        }
+        .tail1 {
+        position: absolute;
+        margin-top: -75px;
+        margin-left: 75px;
+        background-color: black;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        transform: rotate(200deg);
+        width: 130px;
+        height: 30px;
+        }
+        .tail2 {
+        position: absolute;
+        margin-top: -110px;
+        margin-left: 75px;
+        background-color: black;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        transform: rotate(160deg);
+        width: 130px;
+        height: 30px;
+        }
+        .tailLeft {
+        position: absolute;
+        margin-top: -145px;
+        margin-left: 45px;
+        opacity: 0.95;
+        background-color: black;
+        opacity: .5;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        transform: rotate(30deg);
+        width: 120px;
+        height: 50px;
+        animation: tailLeft 4s infinite;
+        }
+        .tailRight {
+        position: absolute;
+        margin-top: -60px;
+        margin-left: 45px;
+        opacity: 0.95;
+        background-color: black;
+        opacity: .5;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        transform: rotate(-30deg);
+        width: 120px;
+        height: 50px;
+        animation: tailRight 4s infinite;
+        }
+
+        .tailFinMiddle {
+        position: absolute;
+        margin-top: -90px;
+        margin-left: -50px;
+        background-color: black;
+        border-radius: 100%;
+        transform: rotate(0deg);
+        width: 170px;
+        height: 25px;
+        }
+        .tailFin1 {
+        position: absolute;
+        opacity: 0.9;
+        margin-top: -105px;
+        background-color: black;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        transform: rotate(15deg);
+        width: 120px;
+        height: 30px;
+        }
+        .tailFin2 {
+        opacity: 0.9;
+        position: absolute;
+        margin-top: -80px;
+        background-color: black;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        transform: rotate(-15deg);
+        width: 120px;
+        height: 30px;
+        }
+        .tailFin3 {
+        opacity: 0.6;
+        position: absolute;
+        margin-top: -80px;
+        margin-left: -55px;
+        background-color: black;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        transform: rotate(-7deg);
+        width: 120px;
+        height: 25px;
+        }
+        .tailFin4 {
+        opacity: 0.6;
+        position: absolute;
+        margin-top: -100px;
+        margin-left: -55px;
+        background-color: black;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        transform: rotate(7deg);
+        width: 120px;
+        height: 25px;
+        }
+        .tailFin5 {
+        opacity: 0.7;
+        position: absolute;
+        margin-top: -79px;
+        margin-left: -80px;
+        background-color: black;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        transform: rotate(10deg);
+        width: 120px;
+        height: 25px;
+        }
+        .tailFin6 {
+        opacity: 0.7;
+        position: absolute;
+        margin-top: -97px;
+        margin-left: -80px;
+        background-color: black;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        transform: rotate(-10deg);
+        width: 120px;
+        height: 25px;
+        }
+        /*#### Animations ####*/
+
+        /* Simple Swim Animation */
+        @keyframes swim {
+        100% {
+            transform: translateY(-150px) translateX(2100px) rotate(20deg);
+        }
+        }
+        /* Left Fin Animation */
+        @keyframes finLeft {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(-15deg) translateY(80px) translateX(30px);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+        }
+        /* Right Fin Animation */
+        @keyframes finRight {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(15deg) translateY(-75px) translateX(-30px);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+        }
+        /* Left Tail Animation */
+        @keyframes tailLeft {
+        0% {
+            transform: rotate(30deg);
+        }
+        25% {
+            transform: rotate(20deg) translateY(15px);
+        }
+        50% {
+            transform: rotate(30deg);
+        }
+        75%{
+            transform: rotate(40deg) translateY(-7px);
+        }
+        100% {
+            transform: rotate(30deg);
+        }
+        }
+        /* Right Tail Animation */
+        @keyframes tailRight {
+        0% {
+            transform: rotate(-30deg);
+        }
+        25% {
+            transform: rotate(-20deg) translateY(-15px);
+        }
+        50% {
+            transform: rotate(-30deg);
+        }
+        75%{
+            transform: rotate(-40deg) translateY(7px);
+        }
+        100% {
+            transform: rotate(-30deg);
+        }
+        }
+        /* Tail Animation */
+        @keyframes tail {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(-7deg) translateY(15px);
+        }
+        50% {
+            transform: rotate(0deg);
+        }
+        75%{
+            transform: rotate(7deg) translateY(-15px);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+        }
+        /* Longer Swim Animation */
+        @keyframes swimAll {
+        0% {
+            transform: translateY(0px) translateX(0px) rotate(0deg);
+        }
+        20% {
+            transform: translateY(170px) translateX(1000px) rotate(20deg);
+        }
+        40% {
+            transform: translateY(300px) translateX(1400px) rotate(70deg);
+        }
+        
+        45% {
+            transform: translateY(330px) translateX(1600px) rotate(160deg);
+        }
+        60% {
+            transform: translateY(300px) translateX(700px) rotate(200deg);
+        }
+        90% {
+            transform: translateY(50px) translateX(-900px) rotate(205deg);
+        }
+        95% {
+            transform: translateY(0px) translateX(-450px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(0px) translateX(0px) rotate(0deg);
+        }
+        }
+/*EXPLORER HEADER*/
+    .explore-header {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 50px black;
+    }
+    .header-title {
+    font-family: 'code bold';
+    text-shadow: 0 0 10px black;
+    font-size: 25px;
+    color: white;
+    top: 10px;
+    left: 1%;
+    position: absolute;
+    z-index: 10;
+    }
+    .header-home {
+    cursor: pointer;
+    font-family: 'code bold';
+    font-size: 25px;
+    color: white;
+    top: 10px;
+    left: 35%;
+    position: absolute;
+    z-index: 10;
+    transition: text-shadow .2s ease-in-out, color .2s ease-in-out;
+    }
+    .header-home:hover {
+    text-shadow: 0 0 20px black;
+    color: gray;
+    }
+/*IDENTIFY-MAIN*/
+    .identify-back {
+    background-image: url("images/identify/Identify-Backest.jpg");
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+    .camo-curtain {
+    background: -webkit-linear-gradient(bottom, transparent, transparent, black);
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+    .identify-curtain {
+    background: -webkit-linear-gradient(bottom, transparent, transparent, orangered);
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    height:100%;
+    width:25%;
+    position: fixed;
+    }
+    .camo-title-id {
+    color: white;
+    text-shadow: 0px 0px 20px black;
+    font-family: 'againts';
+    font-size: 240px;
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 1;
+    }
+    .identify-title {
+    color: orange;
+    text-shadow: 0px 0px 20px black;
+    font-family: 'code bold';
+    font-size: 30px;
+    position: absolute;
+    top:37%;
+    left:50%;
+    transform: translate(-50%);
+    }
+    .identify-line-one {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:33%;
+    left:50%;
+    transform: translate(-50%);
+    }
+     .identify-line-two {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:39%;
+    left:50%;
+    transform: translate(-50%);
+    }
+    .camo-text {
+    color: white;
+    font-family: 'code bold';
+    font-size: 15px;
+    position: absolute;
+    top:43%;
+    left:50%;
+    transform: translate(-50%);
+    }
+    .difficulty-select {
+    color: white;
+    text-shadow: 0px 0px 20px white;
+    }
+    .difficulty-pointer {
+    color: burlywood;
+    text-shadow: 0px 0px 20px black;
+    cursor: pointer;
+    }
+    .difficulty-pointer:hover {
+    color: white;
+    }
+    .break-paint {
+    color: burlywood;   
+    }
+
+/*FACEBOOK-PAGES*/
+    .pages-back {
+    background-image: url("images/pages/Page-Backy.jpg");
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+    .fbpage-curtain {
+    background: -webkit-linear-gradient(bottom, transparent, transparent, black);
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+    .fbook1 {
+    cursor: pointer;
+    background-image: url("images/pages/bird-id.png");
+    background-size: cover;
+    box-shadow: 0 0 2em black;
+    height: 90px;
+    width: 750px;
+    position: absolute;
+    top:8%;
+    right:-5px;
+    border-radius: 5px;
+    }
+    .fbook1:hover {
+    box-shadow: 0 0 0em transparent;
+    }
+    .fbook2 {
+    cursor: pointer;
+    background-image: url("images/pages/bug-id.png");
+    background-size: cover;
+    box-shadow: 0 0 2em black;
+    height: 90px;
+    width: 750px;
+    position: absolute;
+    top:21%;
+    right:-5px;
+    border-radius: 5px;
+    }
+    .fbook2:hover {
+    box-shadow: 0 0 0em transparent;
+    }
+    .fbook3 {
+    cursor: pointer;
+    background-image: url("images/pages/fish-id.png");
+    background-size: cover;
+    box-shadow: 0 0 2em black;
+    height: 90px;
+    width: 750px;
+    position: absolute;
+    top:34%;
+    right:-5px;
+    border-radius: 5px;
+    }
+    .fbook3:hover {
+    box-shadow: 0 0 0em transparent;
+    }
+    .fbook4 {
+    cursor: pointer;
+    background-image: url("images/pages/frog-id.png");
+    background-size: cover;
+    box-shadow: 0 0 2em black;
+    height: 90px;
+    width: 750px;
+    position: absolute;
+    top:47%;
+    right:-5px;
+    border-radius: 5px;
+    }
+    .fbook4:hover {
+    box-shadow: 0 0 0em transparent;
+    }
+    .fbook5 {
+    cursor: pointer;
+    background-image: url("images/pages/lizard-id.png");
+    background-size: cover;
+    box-shadow: 0 0 2em black;
+    height: 90px;
+    width: 750px;
+    position: absolute;
+    top:60%;
+    right:-5px;
+    border-radius: 5px;
+    }
+    .fbook5:hover {
+    box-shadow: 0 0 0em transparent;
+    }
+    .fbook6 {
+    cursor: pointer;
+    background-image: url("images/pages/snake-id.png");
+    background-size: cover;
+    box-shadow: 0 0 2em black;
+    height: 90px;
+    width: 750px;
+    position: absolute;
+    top:73%;
+    right:-5px;
+    border-radius: 5px;
+    }
+    .fbook6:hover {
+    box-shadow: 0 0 0em transparent;
+    }
+    .fbook7 {
+    cursor: pointer;
+    background-image: url("images/pages/my little eye.png");
+    background-size: cover;
+    box-shadow: 0 0 2em black;
+    height: 90px;
+    width: 750px;
+    position: absolute;
+    top:86%;
+    right:-5px;
+    border-radius: 5px;
+    }
+    .fbook7:hover {
+    box-shadow: 0 0 0em transparent;
+    }
+    .fbpage-titles {
+    color: white;
+    text-shadow: 0px 0px 20px black;
+    font-family: 'code bold';
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: absolute;
+    top:8%;
+    left:2%;
+    z-index: 1;
+    }
+    .like-icon {
+    background-image: url("images/pages/fb-like.png");
+    background-size: cover;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top:50%;
+    transform: translate(-30%, -50%);
+    z-index: 10;
+    }
+    .fb-window {
+    background: transparent;
+
+    position: absolute;
+    border-radius: 5px;
+    width: calc(100vw - 810px);
+    height: 89vh;
+    top:8%;
+    left: 30px;
+    }
+    .join-us {
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-family: 'code bold';
+    font-size: 1.7vw;
+    letter-spacing: .15vw;
+    position: absolute;
+    width: 100%;
+    top: 1%;
+    text-align: center;
+    }
+    .join-id {
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-family: 'againts';
+    font-size: 4vw;
+    }
+    .fb-follow {
+    background-image: url("images/pages/fb-follow.jpg");
+    background-size: cover;
+    position: absolute;
+    width: 230px;
+    height: 50px;
+    top:19.5%;
+    left:29.5%;
+    z-index: 10;
+    }
+    .fb-admin {
+    position: absolute;
+    left: 5%;
+    top: 54%;
+    }
+    .admin-border {
+    background-color: black;
+    position: absolute;
+    box-shadow: 0 0 1em black;
+    border-radius: 5px;
+    left: 4%;
+    top: 52%;
+    width: 589px;
+    height: 345px;
+    }
+    .community-text {
+    text-align: center;
+    height: 170px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 1vw;
+    font-family: 'code bold';
+    color: white;
+    text-shadow: 0 0 10px black;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    }
+
+/*AMPHIBIANS-EXPLORE*/
+    .frog-back {
+    background-image: url("images/amphibians/amphibians.png");
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+    .frog-curtain {
+    background: -webkit-linear-gradient(right, transparent, transparent, black);
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+
+/*AMPHIBIANS-EXPLORE TABS*/
+    .caudata {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    top:30%;
+    height: 30px;
+    left:85%;
+    z-index: 100;
+    transform: translate(-50%);
+    cursor: pointer;
+    }
+    .caudata:hover ~ .cauda {
+    left:80%;
+    opacity: 1;
+    } 
+    .gymnophiona {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    top:50%;
+    height: 30px;
+    left:85%;
+    z-index: 100;
+    transform: translate(-50%);
+    cursor: pointer;
+    }
+    .gymnophiona:hover ~ .gymno {
+    left:80%;
+    opacity: 1;
+    }
+    .anura {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    top:70%;
+    height: 30px;
+    left:85%;
+    z-index: 100;
+    transform: translate(-50%);
+    cursor: pointer;
+    }
+    .anura:hover ~ .anuro {
+    left:80%;
+    opacity: 1;
+    }
+    .aeca-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:30%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 50;
+    }
+    .aegy-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:50%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 50;
+    }
+    .aean-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:70%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 50;
+    }
+/*AMPHIBIANS-EXPLORE CURTAINS*/
+    .cauda {
+    background-image: url("images/amphibians/caudata-curtain.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:25%;
+    left:85%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    /*-webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+    }
+    .gymno {
+    background-image: url("images/amphibians/gymnophiona-curtain.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:45%;
+    left:85%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    }
+    .anuro {
+    background-image: url("images/amphibians/anura-curtain.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:65%;
+    left:85%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    }
+/*ARTHROPODS-EXPLORE*/
+    .bugs-back {
+    background-image: url("images/arthropods/Arthropods-two.png");
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+    .bugs-curtain {
+    background: -webkit-linear-gradient(right, black, transparent, transparent, black);
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+
+/*ARTHROPODS-EXPLORE TABS*/
+
+    .chelicerates {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    left:85%;
+    top:20%;
+    z-index: 100;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out, letter-spacing .2s ease-in-out;
+    }
+    .chelicerates:hover ~ .cheli {
+    left:80%;
+    opacity: 1;
+    }
+    .crustaceans {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    top:40%;
+    left:85%;
+    z-index: 100;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    }
+    .crustaceans:hover ~ .crust {
+    left:80%;
+    opacity: 1;
+    }
+    .hexapods {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    top:60%;
+    left:85%;
+    z-index: 100;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    }
+    .hexapods:hover ~ .hexap {
+    left:80%;
+    opacity: 1;
+    }
+    .myriapods{
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    z-index: 100;
+    top:80%;
+    left:85%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    }
+    .myriapods:hover ~ .myria {
+    left:80%;
+    opacity: 1;
+    }
+        .bech-line {
+        color: orange;
+        font-family: 'code bold';
+        text-shadow: 0px 0px 10px black;
+        font-size: 25px;
+        position: absolute;
+        top:20%;
+        left:85%;
+        z-index: 50;
+        transform: translate(-50%);
+        }
+        .becr-line {
+        color: orange;
+        font-family: 'code bold';
+        text-shadow: 0px 0px 10px black;
+        font-size: 25px;
+        position: absolute;
+        top:40%;
+        left:85%;
+        z-index: 50;
+        transform: translate(-50%);
+        }
+        .behe-line {
+        color: orange;
+        font-family: 'code bold';
+        text-shadow: 0px 0px 10px black;
+        font-size: 25px;
+        position: absolute;
+        top:60%;
+        left:85%;
+        z-index: 50;
+        transform: translate(-50%);
+        }
+        .bemy-line {
+        color: orange;
+        font-family: 'code bold';
+        text-shadow: 0px 0px 10px black;
+        font-size: 25px;
+        position: absolute;
+        z-index: 50;
+        top:80%;
+        left:85%;
+        transform: translate(-50%);
+        }
+/*ARTHROPODS-EXPLORE PARTICLES*/
+    #particles-js {
+    position: fixed;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    opacity: .5;
+    }
+/*ARTHROPODS-EXPLORE CURTAINS*/
+    
+    .cheli {
+    background-image: url("images/arthropods/scorpion-curtain.png");
+    box-shadow: 0 0 2em black;
+    pointer-events: none;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:15%;
+    left:85%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    /*-webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+    }
+    .crust {
+    background-image: url("images/arthropods/crab-curtain.png");
+    box-shadow: 0 0 2em black;
+    pointer-events: none;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:35%;
+    left:85%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    }
+    .hexap {
+    background-image: url("images/arthropods/bee-curtain.png");
+    box-shadow: 0 0 2em black;
+    pointer-events: none;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:55%;
+    left:85%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    }
+    .myria {
+    background-image: url("images/arthropods/centipede-curtain.png");
+    box-shadow: 0 0 2em black;
+    pointer-events: none;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:75%;
+    left:85%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    }
+
+/*BIRDS-EXPLORE*/
+    .bird-back {
+    top: -100px;
+    position: absolute;
+    overflow: hidden;
+    z-index: -10;
+    }
+    .neogna {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    top:35%;
+    left:85%;
+    transform: translate(-50%);
+    cursor: pointer;
+    z-index: 50;
+    }
+    .neogna:hover ~ .neogn {
+    left:80%;
+    opacity: 1;
+    }
+    .palaea {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    top:65%;
+    left:85%;
+    transform: translate(-50%);
+    cursor: pointer;
+    z-index: 50;
+    }
+    .palaea:hover ~ .palae {
+    left:80%;
+    opacity: 1;
+    }
+    .neogna-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:35%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 30;
+    }
+    .palaea-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:65%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 30;
+    }
+/*BIRDS-EXPLORE CURTAINS*/
+    .neogn {
+    background-image: url("images/birds/harpy.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    z-index: 5;
+    top:30%;
+    left:85%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    /*-webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+    }
+    .palae {
+    background-image: url("images/birds/cassowary.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    z-index: 5;
+    top:60%;
+    left:85%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    }
+/*FISH-EXPLORE*/
+    .fish-back {
+    background-image: url("Images/fish/fish-back.gif");
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+    .fish-curtain {
+    background-size: 100%;
+    background-size: cover;
+    height:50%;
+    width:100%;
+    position: absolute;
+    bottom: 0; 
+    background: -webkit-linear-gradient(bottom, black, transparent);
+    }
+    .fish-curtain-left {
+    background-size: 100%;
+    background-size: cover;
+    height:40px;
+    width:50%;
+    position: absolute;
+    left:0;
+    background: -webkit-linear-gradient(left, black, transparent);
+    z-index: -1;
+    }
+    .fish-curtain-right {
+    background-size: 100%;
+    background-size: cover;
+    height:40px;
+    width:50%;
+    position: absolute;
+    right:0;
+    background: -webkit-linear-gradient(right, black, transparent);
+    z-index: -1;
+    }
+    .fish-canvas {
+    position: absolute;
+    right: 0px;
+    }
+/*FISH-EXPLORE TABS*/
+    .fish1 {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    top:20%;
+    left:85%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    z-index: 100;
+    }
+    .fish1:hover ~ .actin {
+    left:80%;
+    opacity: 1;
+    }
+    .fish2 {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    top:40%;
+    left:85%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    z-index: 100;
+    }
+    .fish2:hover ~ .cepha {
+    left:80%;
+    opacity: 1;
+    } 
+    .fish3 {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    top:60%;
+    left:85%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    z-index: 100;
+    }
+    .fish3:hover ~ .chonr {
+    left:80%;
+    opacity: 1;
+    }
+    .fish4{
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    top:80%;
+    left:85%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: text-shadow .2s ease-in-out;
+    z-index: 100;
+    }
+    .fish4:hover ~ .sarco {
+    left:80%;
+    opacity: 1;
+    }
+    .fish1-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    top:22%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 50;
+    }
+    .fish2-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    top:42%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 50;
+    }
+    .fish3-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    top:62%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 50;
+    }
+    .fish4-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    top:82%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 50;
+    }
+/*FISH-EXPLORE BANNERS*/
+    .actin {
+    pointer-events: none;
+    background-image: url("images/fish/lionfish.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:15%;
+    left:85%;
+    border-radius: 5px;
+    z-index: 5;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    /*-webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+    }
+    .cepha {
+    pointer-events: none;
+    background-image: url("images/fish/hagfish.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:35%;
+    left:85%;
+    border-radius: 5px;
+    z-index: 5;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    }
+    .chonr {
+    pointer-events: none;
+    background-image: url("images/fish/shark.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:55%;
+    left:85%;
+    border-radius: 5px;
+    z-index: 5;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    }
+    .sarco {
+    pointer-events: none;
+    background-image: url("images/fish/lungfish.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:75%;
+    left:85%;
+    border-radius: 5px;
+    z-index: 5;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    }
+/*MAMMALS-EXPLORE*/
+    .mammal-back {
+    top: -100px;
+    position: absolute;
+    overflow-y: hidden;
+    z-index: -10;
+    }
+    .block-iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -9;   
+    }
+    .protoa {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    top:35%;
+    left:85%;
+    transform: translate(-50%);
+    cursor: pointer;
+    z-index: 50;
+    }
+    .protoa:hover ~ .proto {
+    left:80%;
+    opacity: 1;
+    } 
+    .theria {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    top:65%;
+    left:85%;
+    transform: translate(-50%);
+    cursor: pointer;
+    z-index: 50;
+    }
+    .theria:hover ~ .theri {
+    left:80%;
+    opacity: 1;
+    } 
+    .protoa-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:35%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 30;
+    }
+    .theria-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:65%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 30;
+    }
+/*MAMMALS-EXPLORE CURTAINS*/
+    .proto {
+    background-image: url("images/mammals/echidnas.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    z-index: 5;
+    top:30%;
+    left:85%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    /*-webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+    }
+    .banner-shadow {
+    position:absolute;
+    height: 100vh;
+    width: 500px;
+    right:0px;
+    opacity: .7;
+    background: -webkit-linear-gradient(left, transparent, black);
+    }
+    .theri {
+    background-image: url("images/mammals/elephant.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    z-index: 5;
+    top:60%;
+    left:85%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    }
+/*REPTILES-EXPLORE*/
+    .reptile-back {
+    top: -100px;
+    position: absolute;
+    overflow-y: hidden;
+    z-index: -10;
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    }
+    .crocoa {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    top:30%;
+    left:85%;
+    transform: translate(-50%);
+    cursor: pointer;
+    z-index: 50;
+    }
+    .crocoa:hover ~ .croco {
+    left:80%;
+    opacity: 1;
+    } 
+    .diapsa {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    top:50%;
+    left:85%;
+    transform: translate(-50%);
+    cursor: pointer;
+    z-index: 50;
+    }
+    .diapsa:hover ~ .diaps {
+    left:80%;
+    opacity: 1;
+    } 
+    .anapsa {
+    color: white;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 13px;
+    position: absolute;
+    height: 30px;
+    top:70%;
+    left:85%;
+    transform: translate(-50%);
+    cursor: pointer;
+    z-index: 50;
+    }
+    .anapsa:hover ~ .anaps {
+    left:80%;
+    opacity: 1;
+    } 
+    .croco-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:30%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 30;
+    }
+    .diaps-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:50%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 30;
+    }
+    .anaps-line {
+    color: orange;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:70%;
+    left:85%;
+    transform: translate(-50%);
+    z-index: 30;
+    }
+/*REPTILES-EXPLORE CURTAINS*/
+    .croco {
+    background-image: url("images/reptiles/croc.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    z-index: 5;
+    top:25%;
+    left:85%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    /*-webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+    }
+    .diaps {
+    background-image: url("images/reptiles/lizard.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:45%;
+    left:85%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    opacity: 0;
+    z-index: 5;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    }
+    .anaps {
+    background-image: url("images/reptiles/turtle.png");
+    box-shadow: 0 0 2em black;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top:65%;
+    left:85%;
+    border-radius: 5px;
+    z-index: 5;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: left .2s ease-in-out, opacity .2s ease-in-out;
+    /*-webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+    }
+    
+/*EXPLORER-API STYLES*/
+    .side-thingy {
+    width: 600px;
+    height: 88vh;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    font-size: 13px;
+    font-family: 'code bold';
+    letter-spacing: 5px;
+    font-size: 50;
+    z-index: 100;
+    overflow:auto;
+    direction: rtl;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    .side-thingy > div {
+    direction: ltr;
+    }
+    .api-text {
+    font-family: 'code light';
+    letter-spacing: 2px;
+    line-height: 1.5;
+    }
+    .api-animal {
+    font-size: 19px;
+    }
+    .sci-name {
+    color: orange;
+    font-family: 'code bold';
+    }
+    .api-pointer{
+        cursor: pointer;
+        line-height: 3;
+    }
+    .api-pointer:hover{
+        color: gray;
+    }
+    .api-image {
+    background-size: cover;
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 2em black;
+    }
+    .back-drop {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    height: 100vh;
+    width: 44vw;
+    opacity: .7;
+    background-color: black;
+    -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    }

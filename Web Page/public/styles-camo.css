@@ -1,0 +1,1722 @@
+/*CAMOUFLAGE-MAIN*/
+    .camo-back {
+    background-image: url("images/camouflage/Camo-Wallpaper.jpg");
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+    .camo-curtain {
+    background: -webkit-linear-gradient(bottom, transparent, transparent, black);
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position: fixed;
+    }
+    .camo-curtain-green {
+    background: -webkit-linear-gradient(bottom, transparent, transparent, saddlebrown);
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    height:100%;
+    width:25%;
+    position: fixed;
+    }
+    .camo-title-id {
+    color: white;
+    text-shadow: 0px 0px 20px black;
+    font-family: 'againts';
+    font-size: 16vw;
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 1;
+    }
+    .camo-title {
+    color: burlywood;
+    text-shadow: 0px 0px 20px black;
+    font-family: 'code bold';
+    font-size: 30px;
+    position: absolute;
+    top:37%;
+    left:50%;
+    transform: translate(-50%);
+    }
+    .camo-line-one {
+    color: burlywood;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:33%;
+    left:50%;
+    transform: translate(-50%);
+    }
+     .camo-line-two {
+    color: burlywood;
+    font-family: 'code bold';
+    text-shadow: 0px 0px 10px black;
+    font-size: 25px;
+    position: absolute;
+    top:39%;
+    left:50%;
+    transform: translate(-50%);
+    }
+    .camo-text {
+    color: white;
+    font-family: 'code bold';
+    font-size: 15px;
+    position: absolute;
+    top:43%;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 5;
+    }
+    .difficulty-select {
+    color: white;
+    text-shadow: 0px 0px 20px white;
+    }
+    .difficulty-pointer {
+    color: burlywood;
+    text-shadow: 0px 0px 20px black;
+    cursor: pointer;
+    }
+    .difficulty-pointer:hover {
+    color: white;
+    }
+    .break-paint {
+    color: burlywood;   
+    }
+    .condition-bar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    opacity: .5;
+    }
+    .camo-condition {
+    color: white;
+    text-shadow: 0px 0px 40px black;
+    font-family: "code bold";
+    letter-spacing: 2px;
+    font-size: 13px;
+    top: 15px;
+    position: absolute;
+    transform: translate(-50%);
+    }
+/*CAMOUFLAGE-DIFFICULTIES*/
+    .easy {
+    cursor: pointer;
+    background: -webkit-linear-gradient(right, transparent, transparent, black);
+    box-shadow: 0 0 5em black;
+    height: 130px;
+    width: 48vw;
+    background-size: cover;
+    position: absolute;
+    top:47%;
+    left:-3px;
+    border-radius: 5px;
+    }
+    .easy:hover {
+    background-image: url("images/camouflage/easy-banner.png");
+    box-shadow: 0 0 0em transparent;
+    }
+    .medi {
+    cursor: pointer;
+    background: -webkit-linear-gradient(right, transparent, transparent, black);
+    box-shadow: 0 0 5em black;
+    height: 130px;
+    width: 48vw;
+    background-size: cover;
+    position: absolute;
+    top:66%;
+    left:-3px;
+    border-radius: 5px;
+    }
+    .medi:hover {
+    background-image: url("images/camouflage/medium-banner.png");
+    box-shadow: 0 0 0em transparent;
+    }
+    .hard {
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, transparent, transparent, black);
+    box-shadow: 0 0 5em black;
+    height: 130px;
+    width: 48vw;
+    background-size: cover;
+    position: absolute;
+    top:47%;
+    right:-3px;
+    border-radius: 5px;
+    }
+    .hard:hover {
+    background-image: url("images/camouflage/hard-banner.png");
+    box-shadow: 0 0 0em transparent;
+    }
+    .xxxx {
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, transparent, transparent, black);
+    box-shadow: 0 0 5em black;
+    height: 130px;
+    width: 48vw;
+    background-size: cover;
+    position: absolute;
+    top:66%;
+    right:-3px;
+    border-radius: 5px;
+    }
+    .xxxx:hover {
+    background-image: url("images/camouflage/extreme-banner.png");
+    box-shadow: 0 0 0em transparent;
+    }
+    .camo-difficulties {
+    color: white;
+    text-shadow: 0px 0px 20px black;
+    font-family: 'code bold';
+    font-size: 50px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    }
+    .camo-quote {
+    color: burlywood;
+    text-align: center;
+    font-family: 'code bold';
+    font-size: 13px;
+    position: absolute;
+    width: 90%;
+    top:85%;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 5;
+    letter-spacing: .25vw;
+    line-height: 1.3;
+    }
+/*CAMOUFLAGE-EASY*/
+    .easy-one {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/easy-one.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:48%;
+    left:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easy-one:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .easy-two {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/easy-two.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    width: 44vw;
+    position: absolute;
+    top:58%;
+    left:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easy-two:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .easy-three {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/easy-three.png");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    width: 55vw;
+    position: absolute;
+    top:68%;
+    left:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easy-three:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .easy-four {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/easy-four.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    width: 44vw;
+    position: absolute;
+    top:78%;
+    left:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easy-four:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .easy-five {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/easy-five.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    width: 55vw;
+    position: absolute;
+    top:88%;
+    left:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easy-five:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .easy-six {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/easy-six.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    width: 44vw;
+    position: absolute;
+    top:48%;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easy-six:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .easy-seven {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/easy-seven.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    width: 55vw;
+    position: absolute;
+    top:58%;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easy-seven:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .easy-eight {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/easy-eight.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    width: 44vw;
+    position: absolute;
+    top:68%;
+    width: 44vw;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easy-eight:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .easy-nine {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/easy-nine.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    width: 55vw;
+    position: absolute;
+    top:78%;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easy-nine:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .easy-ten {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/easy-ten.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    width: 44vw;
+    position: absolute;
+    top:88%;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easy-ten:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+/*CAMOUFLAGE-MEDIUM*/
+    .medium-one {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/medium-one.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:48%;
+    left:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medium-one:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .medium-two {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/medium-two.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:58%;
+    width: 44vw;
+    left:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medium-two:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .medium-three {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/medium-three.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:68%;
+    left:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medium-three:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .medium-four {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/medium-four.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:78%;
+    width: 44vw;
+    left:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medium-four:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .medium-five {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/medium-five.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:88%;
+    left:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medium-five:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .medium-six {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/medium-six.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:48%;
+    width: 44vw;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medium-six:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .medium-seven {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:58%;
+    right:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medium-seven:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .medium-eight {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:68%;
+    width: 44vw;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medium-eight:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .medium-nine {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:78%;
+    right:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medium-nine:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .medium-ten {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:88%;
+    width: 44vw;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medium-ten:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+/*CAMOUFLAGE-HARD*/
+    .hard-one {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/hard-one.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:48%;
+    left:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hard-one:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .hard-two {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/hard-two.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:58%;
+    width: 44vw;
+    left:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hard-two:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .hard-three {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/hard-three.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:68%;
+    left:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hard-three:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .hard-four {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/hard-four.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:78%;
+    width: 44vw;
+    left:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hard-four:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .hard-five {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/hard-five.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:88%;
+    left:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hard-five:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .hard-six {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/hard-six.png");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:48%;
+    width: 44vw;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hard-six:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .hard-seven {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/hard-seven.png");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:58%;
+    right:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hard-seven:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .hard-eight {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:68%;
+    width: 44vw;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hard-eight:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .hard-nine {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:78%;
+    right:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hard-nine:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .hard-ten {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:88%;
+    width: 44vw;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hard-ten:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+/*CAMOUFLAGE-EXTREME*/
+    .xxxx-one {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/extreme-one.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:48%;
+    left:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .xxxx-one:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .xxxx-two {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/extreme-two.jpeg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:58%;
+    width: 44vw;
+    left:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .xxxx-two:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .xxxx-three {
+    cursor: pointer;
+    background-image: url("images/camouflage/camos/extreme-three.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:68%;
+    left:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .xxxx-three:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .xxxx-four {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:78%;
+    width: 44vw;
+    left:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .xxxx-four:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .xxxx-five {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:88%;
+    left:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .xxxx-five:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .xxxx-six {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:48%;
+    width: 44vw;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .xxxx-six:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .xxxx-seven {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:58%;
+    right:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .xxxx-seven:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .xxxx-eight {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:68%;
+    width: 44vw;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .xxxx-eight:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .xxxx-nine {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:78%;
+    right:-3px;
+    width: 55vw;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .xxxx-nine:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    .xxxx-ten {
+    cursor: pointer;
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 70px;
+    position: absolute;
+    top:88%;
+    width: 44vw;
+    right:-3px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+    }
+    .xxxx-ten:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+/*CAMOUFLAGE-EXTREME-PAGES*/
+    .extereme-text {
+    color: white;
+    font-family: 'code bold';
+    font-size: 15px;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 5;
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .camoflay-back {
+    cursor: pointer;
+    color:white;
+    text-shadow: 0 0 10px black;
+    font-family: "kg arrows";
+    font-size: 80px;
+    position: absolute;
+    top:55%;
+    left:100px;
+    z-index: 5;
+    transition: transform .3s ease-in-out;
+    }
+    .camoflay-back:hover {
+    transform: scale3d(1.2,1.2,1.2);
+    }
+    .camoflay-next {
+    cursor: pointer;
+    color:white;
+    text-shadow: 0 0 10px black;
+    font-family: "kg arrows";
+    font-size: 80px;
+    position: absolute;
+    top:55%;
+    right:100px;
+    z-index: 5;
+    transition: transform .3s ease-in-out;
+    }
+    .camoflay-next:hover {
+    transform: scale3d(1.2,1.2,1.2);
+    } 
+    .rules-back {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 40px;
+    opacity: .6;
+    }
+    .rules-text {
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100px;
+    letter-spacing: 2px;
+    top: 35px;
+    text-align: center;
+    font-family: 'code bold';
+    font-size: 13px;
+    }
+    .timer {
+    color: white;
+    font-size: 17px;
+    }
+    .difficulty-bar {
+    color: burlywood;
+    font-size: 17px;
+    }
+    .time-message{
+    position: absolute;
+    color: white;
+    text-shadow: 0 0 10px black;
+    letter-spacing: 2px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-family: 'code bold';
+    font-size: 170px;  
+    }
+    .xtreme-one {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/extreme-one.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .xxxx-one:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-xxxx-01 {
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 535px;
+    left: 665px;
+    border-radius: 50%;
+    }
+    #win-xxxx-01:active {
+    box-shadow: inset 0 0 10px orangered, 0 0 50px red;
+    }
+    .xtreme-two {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/extreme-two.jpeg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .xxxx-two:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-xxxx-02 {
+    background-color: transparent;
+    width: 80px;
+    height: 110px;
+    position: absolute;
+    top: 170px;
+    left: 600px;
+    border-radius: 50%;
+    }
+    #win-xxxx-02:active {
+    box-shadow: inset 0 0 60px orangered, 0 0 50px red;
+    }
+    .xtreme-three {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/extreme-three.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .xxxx-three:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-xxxx-03 {
+    background-color: transparent;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 330px;
+    left: 565px;
+    border-radius: 50%;
+    transform: rotate(15deg);
+    }
+    #win-xxxx-03:active {
+    box-shadow: inset 0 0 30px orangered, 0 0 50px red;
+    }
+/*CAMOUFLAGE-HARD-PAGES*/
+    .hardness-one {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/hard-one.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hardness-one:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-hard-01 {
+    background-color: transparent;
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    top: 295px;
+    left: 440px;
+    border-radius: 50%;
+    }
+    #win-hard-01:active {
+    box-shadow: inset 0 0 60px orangered, 0 0 50px red;
+    }
+    .hardness-two {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/hard-two.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hardness-two:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-hard-02 {
+    background-color: transparent;
+    width: 630px;
+    height: 40px;
+    position: absolute;
+    top: 250px;
+    left: 145px;
+    border-radius: 47%;
+    transform: rotate(331deg);
+    }
+    #win-hard-02:active {
+    box-shadow: inset 0 0 50px orangered, 0 0 50px red;
+    }
+    .hardness-three {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/hard-three.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hardness-three:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-hard-03 {
+    background-color: transparent;
+    width: 100px;
+    height: 140px;
+    position: absolute;
+    top: 385px;
+    left: 530px;
+    border-radius: 47%;
+    transform: rotate(300deg);
+    }
+    #win-hard-03:active {
+    box-shadow: inset 0 0 50px orangered, 0 0 50px red;
+    }
+    .hardness-four {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/hard-four.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hardness-four:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-hard-04 {
+    background-color: transparent;
+    width: 70vw;
+    height: 200px;
+    position: absolute;
+    top: 395px;
+    left: 420px;
+    border-radius: 47%;
+    transform: rotate(345deg);
+    }
+    #win-hard-04:active {
+    box-shadow: inset 0 0 90px orangered, 0 0 50px red;
+    }
+    .hardness-five {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/hard-five.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hardness-five:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-hard-05 {
+    background-color: transparent;
+    width: 75px;
+    height: 25px;
+    position: absolute;
+    top: 164px;
+    left: 375px;
+    border-radius: 47%;
+    transform: rotate(330deg);
+    }
+    #win-hard-05:active {
+    box-shadow: inset 0 0 30px orangered, 0 0 50px red;
+    }
+    .hardness-six {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/hard-six.png");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hardness-six:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-hard-06 {
+    background-color: transparent;
+    width: 140px;
+    height: 90px;
+    position: absolute;
+    top: 240px;
+    left: 770px;
+    border-radius: 50%;
+    }
+    #win-hard-06:active {
+    box-shadow: inset 0 0 70px orangered, 0 0 50px red;
+    }
+    .hardness-seven {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/hard-seven.png");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .hardness-seven:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-hard-07 {
+    background-color: transparent;
+    width: 140px;
+    height: 230px;
+    position: absolute;
+    top: 360px;
+    left: 500px;
+    border-radius: 50%;
+    }
+    #win-hard-07:active {
+    box-shadow: inset 0 0 70px orangered, 0 0 50px red;
+    }
+/*CAMOUFLAGE-MEDIUM-PAGES*/
+    .medness-one {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/medium-one.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medness-one:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-medi-01 {
+    background-color: transparent;
+    width: 160px;
+    height: 80px;
+    position: absolute;
+    top: 210px;
+    left: 800px;
+    border-radius: 50%;
+    transform: rotate(70deg);
+    }
+    #win-medi-01:active {
+    box-shadow: inset 0 0 90px orangered, 0 0 50px red;
+    }
+    .medness-two {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/medium-two.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medness-two:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-medi-02-1 {
+    background-color: transparent;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 310px;
+    left: 110px;
+    border-radius: 50%;
+    }
+    #win-medi-02-1:active {
+    box-shadow: inset 0 0 50px orangered, 0 0 50px red;
+    }
+    #win-medi-02-2 {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 395px;
+    left: 390px;
+    border-radius: 50%;
+    }
+    #win-medi-02-2:active {
+    box-shadow: inset 0 0 50px orangered, 0 0 50px red;
+    }
+    .medness-three {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/medium-three.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medness-three:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-medi-03 {
+    background-color: transparent;
+    width: 35px;
+    height: 180px;
+    position: absolute;
+    top: 370px;
+    left: 527px;
+    border-radius: 50%;
+    transform: rotate(315deg)
+    }
+    #win-medi-03:active {
+    box-shadow: inset 0 0 40px orangered, 0 0 50px red;
+    }
+    .medness-four {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/medium-four.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medness-four:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-medi-04 {
+    background-color: transparent;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 185px;
+    left: 385px;
+    border-radius: 50%;
+    }
+    #win-medi-04:active {
+    box-shadow: inset 0 0 40px orangered, 0 0 50px red;
+    }
+    .medness-five {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/medium-five.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medness-five:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-medi-05 {
+    background-color: transparent;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 410px;
+    left: 200px;
+    border-radius: 50%;
+    }
+    #win-medi-05:active {
+    box-shadow: inset 0 0 100px orangered, 0 0 50px red;
+    }
+    .medness-six {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/medium-six.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .medness-six:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-medi-06 {
+    background-color: transparent;
+    width: 70px;
+    height: 170px;
+    position: absolute;
+    top: 80px;
+    left: 360px;
+    border-radius: 50%;
+    transform: rotate(340deg);
+    }
+    #win-medi-06:active {
+    box-shadow: inset 0 0 100px orangered, 0 0 50px red;
+    }
+/*CAMOUFLAGE-EASY-PAGES*/
+    .easiness-one {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/easy-one.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easiness-one:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-easy-01 {
+    background-color: transparent;
+    width: 16%;
+    height: 36%;
+    position: absolute;
+    top: 26%;
+    left: 18%;
+    border-radius: 50%;
+    transform: rotate(340deg);
+    }
+    #win-easy-01:active {
+    box-shadow: inset 0 0 150px orangered, 0 0 50px red;
+    }
+    .easiness-two {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/easy-two.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easiness-two:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-easy-02 {
+    background-color: transparent;
+    width: 30%;
+    height: 25%;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    border-radius: 50%;
+    transform: rotate(350deg);
+    }
+    #win-easy-02:active {
+    box-shadow: inset 0 0 150px orangered, 0 0 50px red;
+    }
+    .easiness-three {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/easy-three.png");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easiness-three:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-easy-03 {
+    background-color: transparent;
+    width: 155px;
+    height: 90px;
+    position: absolute;
+    top: 140px;
+    left: 490px;
+    border-radius: 50%;
+    transform: rotate(10deg);
+    }
+    #win-easy-03:active {
+    box-shadow: inset 0 0 150px orangered, 0 0 50px red;
+    }
+    .easiness-four {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/easy-four.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easiness-four:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-easy-04 {
+    background-color: transparent;
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    top: 267px;
+    left: 463px;
+    border-radius: 50%;
+    transform: rotate(3deg);
+    }
+    #win-easy-04:active {
+    box-shadow: inset 0 0 70px orangered, 0 0 50px red;
+    }
+    .easiness-five {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/easy-five.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easiness-five:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-easy-05 {
+    background-color: transparent;
+    width: 50px;
+    height: 115px;
+    position: absolute;
+    top: 355px;
+    left: 115px;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    }
+    #win-easy-05:active {
+    box-shadow: inset 0 0 70px orangered, 0 0 50px red;
+    }
+    .easiness-six {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/easy-six.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easiness-six:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-easy-06 {
+    background-color: transparent;
+    width: 130px;
+    height: 300px;
+    position: absolute;
+    top: -35px;
+    left: 525px;
+    border-radius: 50%;
+    transform: rotate(310deg);
+    }
+    #win-easy-06:active {
+    box-shadow: inset 0 0 100px orangered, 0 0 50px red;
+    }
+    .easiness-seven {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/easy-seven.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easiness-seven:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-easy-07 {
+    background-color: transparent;
+    width: 95px;
+    height: 130px;
+    position: absolute;
+    top: 150px;
+    left: 460px;
+    border-radius: 50%;
+    }
+    #win-easy-07:active {
+    box-shadow: inset 0 0 50px orangered, 0 0 50px red;
+    }
+    .easiness-eight {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/easy-eight.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easiness-eight:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-easy-08 {
+    background-color: transparent;
+    width: 65px;
+    height: 85px;
+    position: absolute;
+    top: 225px;
+    left: 510px;
+    border-radius: 50%;
+    transform: rotate(65deg);
+    }
+    #win-easy-08:active {
+    box-shadow: inset 0 0 50px orangered, 0 0 50px red;
+    }
+    .easiness-nine {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/easy-nine.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easiness-nine:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-easy-09 {
+    background-color: transparent;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 235px;
+    left: 460px;
+    border-radius: 50%;
+    }
+    #win-easy-09:active {
+    box-shadow: inset 0 0 50px orangered, 0 0 50px red;
+    }
+    .easiness-ten {
+    cursor: pointer;
+    text-align: center;
+    background-image: url("images/camouflage/camos/easy-ten.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5em black;
+    height: 75vh;
+    width: 70vw;
+    position: absolute;
+    top:21%;
+    left:50%;
+    border-radius: 5px;
+    transform: translate(-50%);
+    transition: box-shadow .3s ease-in-out;
+    }
+    .easiness-ten:hover {
+    box-shadow: 0 0 0 transparent;
+    }
+    #win-easy-10 {
+    background-color: transparent;
+    width: 190px;
+    height: 140px;
+    position: absolute;
+    top: 350px;
+    left: 240px;
+    border-radius: 50%;
+    transform: rotate(330deg);
+    }
+    #win-easy-10:active {
+    box-shadow: inset 0 0 90px orangered, 0 0 50px red;
+    }
